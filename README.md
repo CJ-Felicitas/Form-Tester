@@ -5,3 +5,10 @@
 - web server -> xampp
 - version -> 8.1.1
 - DB -> Maria BD
+
+## Sample UI
+
+https://cj-felicitas.github.io/Form-Tester/
+
+Javascript will be added soon
+
