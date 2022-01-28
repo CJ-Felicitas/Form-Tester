@@ -49,29 +49,31 @@
 
     ?>
     <div class="container" style="margin-top: 40px;">
+    <hr><br>
         <h3 class="header">FORM TESTER</h3>
         <br><br><br>
         <div class="row">
             <div class="col-lg-4">
+                <h1>Welcome</h1><br>
                 <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
                     <input type="text" name="employee_id" class="form-control" required placeholder="Employee ID" style="border-radius: 10px; height:50px;font-family: 'Rubik', sans-serif; font-size:18px"><br>
 
 
-    <select name="branch" id="" style="width: 100%; border-radius:10px; height:50px;font-family: 'Rubik', sans-serif;font-size:18px; margin-bottom:20px; padding:7px">
-        <option value="">BRANCH</option>
-        <option value="Branch 1">Branch 1</option>
-        <option value="Branch 2">Branch 2</option>
-        <option value="Branch 3">Branch 3</option>
-    </select>
+                    <select name="branch" id="" style="width: 100%; border-radius:10px; height:50px;font-family: 'Rubik', sans-serif;font-size:18px; margin-bottom:20px; padding:7px" aria-placeholder="BRANCH">
+                        <option value="">BRANCH</option>
+                        <option value="Branch 1">Branch 1</option>
+                        <option value="Branch 2">Branch 2</option>
+                        <option value="Branch 3">Branch 3</option>
+                    </select>
 
                     <input type="text" name="password" class="form-control" required placeholder="Password" style="border-radius: 10px;height:50px;font-family: 'Rubik', sans-serif;font-size:18px"><br>
-                    <input type="submit" value="Login" class="btn btn-primary" name="submit" style="font-size:18px;font-family: 'Rubik', sans-serif;font-size:18px; height:50px;display:block;margin:auto;width:100%">
+                    <input type="submit" value="Login" class="btn btn-primary" name="submit" style="font-size:18px;font-family: 'Rubik', sans-serif;font-size:18px; height:50px;display:block;margin:auto;width:100%;border-radius:10px">
 
                 </form>
             </div>
 
             <div class="col-lg-4">
-
+<!-- second column -->
 
             </div>
             <div class="col-lg-4">
@@ -82,19 +84,7 @@
 
 
         </div>
-        <?php
 
-        if (isset($_POST['submit'])) {
-            $txtname = $_POST['name'];
-            $txtcampus = $_POST['campus'];
-            $txtyear = $_POST['year'];
-
-            $query = "INSERT INTO portal (student_name,student_year,student_campus) VALUES('$txtname','$txtyear','$txtcampus');";
-
-            mysqli_query($conn, $query);
-        }
-
-        ?>
 
     </div>
 
