@@ -8,8 +8,6 @@
 
 ## Sample UI
 
-https://cj-felicitas.github.io/Form-Tester/
-
 - working on sessions and cookies
-- dashboard no design as of now
+
 - login script added but still need to practice using sessions
