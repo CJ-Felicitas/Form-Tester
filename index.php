@@ -122,7 +122,7 @@
             
             <div class="col-lg-8">
 
-                <img src="page_image/upside_enlarge.png" alt="logo" style="width: 60%; height: 400px; margin-left:40%">
+                <img src="page_image/upside_enlarge.png" alt="logo" style="width: 60%; height: 500px; margin-left:40%">
 
             </div>
 
