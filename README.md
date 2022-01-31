@@ -10,5 +10,6 @@
 
 https://cj-felicitas.github.io/Form-Tester/
 
-Javascript will be added soon
-Finally decided to turn this into a project and not a tester anymore
+- working on sessions and cookies
+- dashboard no design as of now
+- login script added but still need to practice using sessions
