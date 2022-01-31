@@ -9,5 +9,5 @@
 ## Sample UI
 
 - working on sessions and cookies
-
 - login script added but still need to practice using sessions
+- rename the index.php to open employee_generator.php
