@@ -41,7 +41,7 @@ session_start();
       <li><a href="#" style="color: black;font-family: 'Rubik', sans-serif; font-size:16px;"><b>Home</b></a></li>
       <li><a href="#"style="color: black;font-family: 'Rubik', sans-serif;font-size:16px;"><b>Announcement</b></a></li>
       <li><a href="#"style="color: black;font-family: 'Rubik', sans-serif;font-size:16px;"><b>View Client</b></a></li>
-      <li><a href="#"style="color: black;font-family: 'Rubik', sans-serif;font-size:16px;"><b>Logout</b></a></li>
+      <li><a href="logout.php"style="color: black;font-family: 'Rubik', sans-serif;font-size:16px;"><b>Logout</b></a></li>
     </ul>
 
     <ul class="nav navbar-nav navbar-right">
