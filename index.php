@@ -13,7 +13,7 @@
 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconn  ect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -26,13 +26,23 @@
 
         h3.header {
             text-align: center;
-            font-size: 30px;
+            font-size: 50px;
+            font-family: 'Rubik', sans-serif;
+        }
+        h3.navbar {
+            text-align: center;
+            font-size: 40px;
+            font-family: 'Rubik', sans-serif;
+        }
+        h4.top{
+            margin-left: 5px;
+            font-size: 20px;
             font-family: 'Rubik', sans-serif;
         }
     </style>
 </head>
 
-<body>
+<body style="background-color: ivory;">
 
     <?php
     $hostname = "localhost";
@@ -48,9 +58,14 @@
 
 
     ?>
-    <div class="container" style="margin-top: 40px;">
-    <hr><br>
-        <h3 class="header">FORM TESTER</h3>
+    <div style="background-color: coral; width: 100%; height: 50px;">
+   
+<p style="text-align: left; font-family: 'Rubik', sans-serif; color:black;font-size:25px;line-height:50px;text-indent:30px"><b>Joyful Burger</b></p>
+    </div>
+
+    <div class="container">
+        
+        <h3 class="header"><b>Joyful Burger Services</b></h3>
         <br><br><br>
         <div class="row">
             <div class="col-lg-4">
@@ -60,7 +75,7 @@
 
 
                     <select name="branch" id="" style="width: 100%; border-radius:10px; height:50px;font-family: 'Rubik', sans-serif;font-size:18px; margin-bottom:20px; padding:7px" aria-placeholder="BRANCH">
-                        <option value="">BRANCH</option>
+                        <option value="">Select Branch</option>
                         <option value="Branch 1">Branch 1</option>
                         <option value="Branch 2">Branch 2</option>
                         <option value="Branch 3">Branch 3</option>
@@ -70,51 +85,51 @@
                     <input type="submit" value="Login" class="btn btn-primary" name="submit" style="font-size:18px;font-family: 'Rubik', sans-serif;font-size:18px; height:50px;display:block;margin:auto;width:100%;border-radius:10px">
 
 
-<?php
+                    <?php
 
-if (isset($_POST['submit'])) {
-    $employee_id = $_POST['employee_id'];
-    $branch = $_POST['branch'];
-    $password = $_POST['password'];
+                    if (isset($_POST['submit'])) {
+                        $employee_id = $_POST['employee_id'];
+                        $branch = $_POST['branch'];
+                        $password = $_POST['password'];
+                        $error_message = "";
 
-    $query = "SELECT * FROM employees WHERE employee_id='$employee_id';";
 
-    $result = $conn->query($query);
-    $row=$result->fetch_assoc();
-
-    if ($row['employee_id']==$employee_id and $row['branch']==$branch and $row['employee_password']==$password) {
-        session_start();
-        $_SESSION['name']=$row['employee_name'];
-        header("Location: dashboard.php?LoginSuccess");
-    } 
+                        $query = "SELECT * FROM employees WHERE employee_id='$employee_id';";
+                        $result = $conn->query($query);
+                        $row = $result->fetch_assoc();
 
 
 
+                        if (@$row['employee_id'] == $employee_id and $row['branch'] == $branch and $row['employee_password'] == $password) {
+                            session_start();
+                            $_SESSION['name'] = $row['employee_name'];
+                            header("Location: dashboard.php?LoginSuccess");
+                        } else {
 
+                            echo "<br><div class='alert alert-danger' style='font-size:18px;font-family: 'Rubik', sans-serif;font-size:18px; height:50px;display:block;margin:auto;width:100%;border-radius:10px'>
+    Credentials not <strong>found</strong>
+  </div>";
+                        }
+                    }
 
-}
-
-?>
+                    ?>
 
 
 
                 </form>
             </div>
 
-            <div class="col-lg-4">
-<!-- second column -->
+            
+            <div class="col-lg-8">
 
-            </div>
-            <div class="col-lg-4">
-
-                <img src="page_image/fehapo.png" alt="logo" style="width: 100%; height: 400px;">
+                <img src="page_image/upside_enlarge.png" alt="logo" style="width: 60%; height: 400px; margin-left:40%">
 
             </div>
 
 
         </div>
 
-        
+
 
     </div>
 
