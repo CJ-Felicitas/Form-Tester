@@ -1,4 +1,4 @@
-# Form-Tester
+# Hospital Management System
 
 - dummy DB / DB test
 - add/remove textfields if necessary
@@ -6,9 +6,18 @@
 - version -> 8.1.1
 - DB -> Maria BD
 
+
+
 ## To do
 
+### Priority
+- alter the table and fix the constraints of each table
+- practice JS DOM for dashboard menu 
+
+### Less Priority
 - work on sessions and cookies
 - login script added but still need to practice using sessions
-- rename the index.php to open employee_generator.php
-- Separate admin view and employee 1 and 2 view
+- Separate admin view from the rest of the employees
+- utilize employee_generator.php for the admin view
+- Fix password issue in google when signing in
+- error handlers for session_destroy() whenever logout is set
