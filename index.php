@@ -20,24 +20,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Tester</title>
     <style>
-        body {
-            background-color: white;
-        }
+      
 
         h3.header {
             text-align: center;
             font-size: 50px;
             font-family: 'Rubik', sans-serif;
         }
+
         h3.navbar {
             text-align: center;
             font-size: 40px;
             font-family: 'Rubik', sans-serif;
         }
-        h4.top{
+
+        h4.top {
             margin-left: 5px;
             font-size: 20px;
             font-family: 'Rubik', sans-serif;
+        }
+        h3.description{
+            font-family: 'Rubik', sans-serif;
+            text-align: justify;
+            color: white;
         }
     </style>
 </head>
@@ -58,14 +63,15 @@
 
 
     ?>
-    <div style="background-color: coral; width: 100%; height: 50px;">
-   
-<p style="text-align: left; font-family: 'Rubik', sans-serif; color:black;font-size:25px;line-height:50px;text-indent:30px"><b>Joyful Burger</b></p>
+    <div style="background-color: #4297A0; width: 100%; height: 50px;">
+
+        <p style="text-align: left; font-family: 'Rubik', sans-serif; color:black;font-size:25px;line-height:50px;text-indent:30px"><b>Joyful Burger</b></p>
     </div>
 
     <div class="container">
-        
-        <h3 class="header"><b>Joyful Burger Services</b></h3>
+
+        <h3 class="header"><b>Joyful Burger Inc.</b></h3>
+        <hr style="border: 1px solid black">
         <br><br><br>
         <div class="row">
             <div class="col-lg-4">
@@ -81,8 +87,18 @@
                         <option value="Branch 3">Branch 3</option>
                     </select>
 
-                    <input type="text" name="password" class="form-control" required placeholder="Password" style="border-radius: 10px;height:50px;font-family: 'Rubik', sans-serif;font-size:18px"><br>
-                    <input type="submit" value="Login" class="btn btn-primary" name="submit" style="font-size:18px;font-family: 'Rubik', sans-serif;font-size:18px; height:50px;display:block;margin:auto;width:100%;border-radius:10px">
+                    
+                    <select name="employee_role" id="" style="width: 100%; border-radius:10px; height:50px;font-family: 'Rubik', sans-serif;font-size:18px; margin-bottom:20px; padding:7px" aria-placeholder="BRANCH">
+                        <option value="">Select Role</option>
+                        <option value="Branch 1">Admin</option>
+                        <option value="Branch 2">Employee 1</option>
+                        <option value="Branch 3">Employee  </option>
+                    </select>
+
+
+
+                    <input type="password" name="password" class="form-control" required placeholder="Password" style="border-radius: 10px;height:50px;font-family: 'Rubik', sans-serif;font-size:18px"><br>
+                    <input type="submit" value="Login" class="btn btn-primary" name="submit" style="font-size:18px;font-family: 'Rubik', sans-serif;font-size:18px; height:50px;display:block;margin:auto;width:100%;border-radius:10px;background-color:coral;color:black;font-weight: bold;">
 
 
                     <?php
@@ -105,33 +121,43 @@
                             $_SESSION['name'] = $row['employee_name'];
                             header("Location: dashboard.php?LoginSuccess");
                         } else {
-
                             echo "<br><div class='alert alert-danger' style='font-size:18px;font-family: 'Rubik', sans-serif;font-size:18px; height:50px;display:block;margin:auto;width:100%;border-radius:10px'>
-    Credentials not <strong>found</strong>
-  </div>";
+                            Credentials not <strong>found</strong>
+                            </div>";
                         }
                     }
-
                     ?>
+                   </form>
+               </div>
 
+                <div class="col-lg-8">
+                 <img src="page_image/upside_enlarge.png" alt="logo" style="width: 60%; height: 500px; margin-left:40%">
+                 </div>
 
+                 </div>
 
-                </form>
-            </div>
-
-            
-            <div class="col-lg-8">
-
-                <img src="page_image/upside_enlarge.png" alt="logo" style="width: 60%; height: 500px; margin-left:40%">
-
-            </div>
-
-
-        </div>
-
-
+          
 
     </div>
+
+<div class="container-fluid" style="background-color: #2F5061; margin-top:70px">
+<div class="container" style="margin-top: 30px;">
+<div class="row" style="margin-top:70px;">
+               <div class="col-lg-4">
+<h3 class="description">An exclusive website for Joyful Burger Inc. Where employees can manage and maintain
+    anytype of works that are assigned to the employees.
+</h3>
+<h3 class="description">We value collaboration where everyone bounces off idea at each other. It's like a flying person and a laser shooting person realizing that they could team up to become a flying laser shooting person.
+</h3>
+            </div>
+            <div class="col-lg-8">
+<img class="img-rounded" src="page_image/Joyful Burger Inc.png" alt="Graph" width="500px" height="500px" style="margin-left:40%">
+            </div>
+        </div>
+</div>
+</div>
+
+
 
 </body>
 
