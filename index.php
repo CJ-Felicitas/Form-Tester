@@ -42,12 +42,12 @@
         h3.description{
             font-family: 'Rubik', sans-serif;
             text-align: justify;
-            color: white;
+            color: black;
         }
     </style>
 </head>
 
-<body style="background-color: ivory;">
+<body style="background-color: #F9F6F0;">
 
     <?php
     $hostname = "localhost";
@@ -63,9 +63,9 @@
 
 
     ?>
-    <div style="background-color: #4297A0; width: 100%; height: 50px;">
+    <div style="background-color: black; width: 100%; height: 50px;">
 
-        <p style="text-align: left; font-family: 'Rubik', sans-serif; color:black;font-size:25px;line-height:50px;text-indent:30px"><b>Joyful Burger</b></p>
+        <p style="text-align: left; font-family: 'Rubik', sans-serif; color:white;font-size:25px;line-height:50px;text-indent:30px"><b>Joyful Burger</b></p>
     </div>
 
     <div class="container">
@@ -98,7 +98,7 @@
 
 
                     <input type="password" name="password" class="form-control" required placeholder="Password" style="border-radius: 10px;height:50px;font-family: 'Rubik', sans-serif;font-size:18px"><br>
-                    <input type="submit" value="Login" class="btn btn-primary" name="submit" style="font-size:18px;font-family: 'Rubik', sans-serif;font-size:18px; height:50px;display:block;margin:auto;width:100%;border-radius:10px;background-color:coral;color:black;font-weight: bold;">
+                    <input type="submit" value="Login" class="btn btn-primary" name="submit" style="font-size:18px;font-family: 'Rubik', sans-serif;font-size:18px; height:50px;display:block;margin:auto;width:100%;border-radius:10px;background-color:#6F5B3E;color:white;font-weight: bold;">
 
 
                     <?php
@@ -140,7 +140,7 @@
 
     </div>
 
-<div class="container-fluid" style="background-color: #2F5061; margin-top:70px">
+<div class="container-fluid" style="background-color: #C4AE78; margin-top:70px">
 <div class="container" style="margin-top: 30px;">
 <div class="row" style="margin-top:70px;">
                <div class="col-lg-4">
@@ -152,7 +152,8 @@
             </div>
             <div class="col-lg-8">
 <img class="img-rounded" src="page_image/Joyful Burger Inc.png" alt="Graph" width="500px" height="500px" style="margin-left:40%">
-            </div>
+<br><br><br><br>           
+</div>
         </div>
 </div>
 </div>
