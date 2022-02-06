@@ -21,6 +21,9 @@ session_start();
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- internal scripts -->
+  <script src="../scripts/changeMenu.js" async></script>
   <title>Document</title>
   <style>
     h3.header {
@@ -62,24 +65,23 @@ session_start();
     <div class="row">
       <div class="col-lg-12">
         <h3 class="header"><b>Dashboard</b></h3>
-        <hr style="border: 2px solid black;">
+     <br>
            </div>
     </div>
 
 
     <div class="row">
 <div class="col-lg-12">
-<a href="" style="background-color: black; padding:20px;color:white;font-family: 'Rubik', sans-serif;font-size:16px;text-decoration:none;border-radius: 10px;">Create Schedule</a>
-<a class="hoverme" href="" style="background-color: black; padding:20px;color:white;font-family: 'Rubik', sans-serif;font-size:16px;text-decoration:none;border-radius: 10px;">View Schedule</a>
-<a class="hoverme" href="" style="background-color: black; padding:20px;color:white;font-family: 'Rubik', sans-serif;font-size:16px;text-decoration:none;border-radius: 10px;">Search Patient</a>
+<button onclick="createSchedule();" style="background-color: black; padding:20px;color:white;font-family: 'Rubik', sans-serif;font-size:16px;text-decoration:none;border-radius: 10px;">Create Schedule</button>
+<button class="hoverme" style="background-color: black; padding:20px;color:white;font-family: 'Rubik', sans-serif;font-size:16px;text-decoration:none;border-radius: 10px;">View Schedule</button>
+<button class="hoverme" style="background-color: black; padding:20px;color:white;font-family: 'Rubik', sans-serif;font-size:16px;text-decoration:none;border-radius: 10px;">Search Patient</button>
 </div>
     </div>
 
-    <div class="row">
-<div class="col-lg-12">
+    <div class="row"  style="margin-top: 100px;" id="changeMenu">
 
-</div>
     </div>
+
 
 
   </div>
