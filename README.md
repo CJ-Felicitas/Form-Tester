@@ -12,7 +12,7 @@
 
 ### Priority
 - alter the table and fix the constraints of each table
-- practice JS DOM for dashboard menu 
+- Fix the bug in changeMenu() function 
 
 ### Less Priority
 - work on sessions and cookies
