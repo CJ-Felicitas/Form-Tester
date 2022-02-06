@@ -38,8 +38,10 @@ session_start();
 
 <body style="background-color: #F9F6F0;">
   <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color:black;">
-    <div class="container-fluid">
-      <div class="navbar-header">
+ 
+  <div class="container-fluid">
+ 
+  <div class="navbar-header">
         <p class="navbar-brand" href="#" style="color: white;font-family: 'Rubik', sans-serif;font-size:25px;line-height:30px"><b>Joyful Burger</b></p>
       </div>
 
@@ -47,7 +49,7 @@ session_start();
       <ul class="nav navbar-nav navbar-right">
       <li style="color: white;font-family: 'Rubik', sans-serif;font-size:16px; line-height:60px;margin-right:30px"><b><?php  echo @$_SESSION['name']; ?></b></li>  
       <li style="color: white;font-family: 'Rubik', sans-serif;font-size:16px; line-height:60px;margin-right:30px"><b><a href="logout.php" style="color: red;">Logout</a></b></li>
-        <li><img src="page_image/upside_enlarge.png" alt="" class="img-rouned" style="width: 35px;height:35px;margin-top:10px;margin-right:30px"></li>
+        <li><img src="../page_image/upside_enlarge.png" alt="" class="img-rouned" style="width: 35px;height:35px;margin-top:10px;margin-right:30px"></li>
 
       </ul>
 
@@ -59,7 +61,6 @@ session_start();
   <div class="container" style="margin-top: 80px;">
     <div class="row">
       <div class="col-lg-12">
-
         <h3 class="header"><b>Dashboard</b></h3>
         <hr style="border: 2px solid black;">
            </div>
@@ -67,14 +68,18 @@ session_start();
 
 
     <div class="row">
-<div class="col-lg-6">
+<div class="col-lg-12">
 <a href="" style="background-color: black; padding:20px;color:white;font-family: 'Rubik', sans-serif;font-size:16px;text-decoration:none;border-radius: 10px;">Create Schedule</a>
 <a class="hoverme" href="" style="background-color: black; padding:20px;color:white;font-family: 'Rubik', sans-serif;font-size:16px;text-decoration:none;border-radius: 10px;">View Schedule</a>
 <a class="hoverme" href="" style="background-color: black; padding:20px;color:white;font-family: 'Rubik', sans-serif;font-size:16px;text-decoration:none;border-radius: 10px;">Search Patient</a>
 </div>
     </div>
 
-    
+    <div class="row">
+<div class="col-lg-12">
+
+</div>
+    </div>
 
 
   </div>

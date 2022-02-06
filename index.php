@@ -49,7 +49,20 @@
 
 <body style="background-color: #F9F6F0;">
 
+    <?php
+    $hostname = "localhost";
+    $username = "root";
+    $password = "";
+    $database_name = "fehapo";
 
+    $conn = new mysqli($hostname, $username, $password, $database_name);
+    if ($conn->connect_error) {
+        die("Could not establish a connection");
+    }
+
+
+
+    ?>
     <div style="background-color: black; width: 100%; height: 50px;">
 
         <p style="text-align: left; font-family: 'Rubik', sans-serif; color:white;font-size:25px;line-height:50px;text-indent:30px"><b>Joyful Burger</b></p>
@@ -63,7 +76,7 @@
         <div class="row">
             <div class="col-lg-4">
                 <h1>Welcome</h1><br>
-                <form action="" method="post">
+                <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
                     <input type="text" name="employee_id" class="form-control" required placeholder="Employee ID" style="border-radius: 10px; height:50px;font-family: 'Rubik', sans-serif; font-size:18px"><br>
 
 
@@ -88,7 +101,32 @@
                     <input type="submit" value="Login" class="btn btn-primary" name="submit" style="font-size:18px;font-family: 'Rubik', sans-serif;font-size:18px; height:50px;display:block;margin:auto;width:100%;border-radius:10px;background-color:#6F5B3E;color:white;font-weight: bold;">
 
 
-                
+                    <?php
+
+                    if (isset($_POST['submit'])) {
+                        $employee_id = $_POST['employee_id'];
+                        $branch = $_POST['branch'];
+                        $password = $_POST['password'];
+                        $error_message = "";
+
+
+                        $query = "SELECT * FROM employees WHERE employee_id='$employee_id';";
+                        $result = $conn->query($query);
+                        $row = $result->fetch_assoc();
+
+
+
+                        if (@$row['employee_id'] == $employee_id and $row['branch'] == $branch and $row['employee_password'] == $password) {
+                            session_start();
+                            $_SESSION['name'] = $row['employee_name'];
+                            header("Location: pages/dashboard.php?LoginSuccess");
+                        } else {
+                            echo "<br><div class='alert alert-danger' style='font-size:18px;font-family: 'Rubik', sans-serif;font-size:18px; height:50px;display:block;margin:auto;width:100%;border-radius:10px'>
+                            Credentials not <strong>found</strong>
+                            </div>";
+                        }
+                    }
+                    ?>
                    </form>
                </div>
 
