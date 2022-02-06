@@ -21,3 +21,4 @@
 - utilize employee_generator.php for the admin view
 - Fix password issue in google when signing in
 - error handlers for session_destroy() whenever logout is set
+- create css files to clean the code
