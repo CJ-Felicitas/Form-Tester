@@ -11,7 +11,7 @@
 ## To do
 
 ### Priority
-- alter the table and fix the constraints of each table
+- alter the table and fix the constraints of each table in sql
 - Fix the bug in changeMenu() function 
 
 ### Less Priority
