@@ -5,6 +5,9 @@ session_start();
 <html lang="en">
 
 <head>
+
+  
+
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
@@ -21,7 +24,7 @@ session_start();
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link rel="stylesheet" href="../styles/style.css">
   <!-- internal scripts -->
   <script src="../scripts/changeMenu.js" async></script>
   <title>Document</title>
@@ -32,10 +35,7 @@ session_start();
       font-family: 'Rubik', sans-serif;
     }
 
-    a.hoverme :hover {
-      background-color: white;
-      color: black;
-    }
+
   </style>
 </head>
 
@@ -61,7 +61,7 @@ session_start();
     </div>
   </nav>
 
-  <div class="container" style="margin-top: 80px;">
+  <div class="container" style="margin-top: 80px;" id="container">
     <div class="row">
       <div class="col-lg-12">
         <h3 class="header"><b>Dashboard</b></h3>
@@ -72,13 +72,13 @@ session_start();
 
     <div class="row">
 <div class="col-lg-12">
-<button onclick="createSchedule();" style="background-color: black; padding:20px;color:white;font-family: 'Rubik', sans-serif;font-size:16px;text-decoration:none;border-radius: 10px;">Create Schedule</button>
-<button class="hoverme" style="background-color: black; padding:20px;color:white;font-family: 'Rubik', sans-serif;font-size:16px;text-decoration:none;border-radius: 10px;">View Schedule</button>
-<button class="hoverme" style="background-color: black; padding:20px;color:white;font-family: 'Rubik', sans-serif;font-size:16px;text-decoration:none;border-radius: 10px;">Search Patient</button>
+<button onclick="createSchedule();" style="background-color: black; padding:20px;color:white;font-family: 'Rubik', sans-serif;font-size:16px;text-decoration:none;border-radius: 10px;" class="btn">Create Schedule</button>
+<button style="background-color: black; padding:20px;color:white;font-family: 'Rubik', sans-serif;font-size:16px;text-decoration:none;border-radius: 10px;" class="btn">View Schedule</button>
+<button style="background-color: black; padding:20px;color:white;font-family: 'Rubik', sans-serif;font-size:16px;text-decoration:none;border-radius: 10px;" class="btn">Search Patient</button>
 </div>
     </div>
 
-    <div class="row"  style="margin-top: 100px;" id="changeMenu">
+    <div class="row"  style="margin-top: 50px;" id="changeMenu">
 
     </div>
 
