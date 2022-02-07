@@ -12,7 +12,7 @@
 
 ### Priority
 - alter the table and fix the constraints of each table in sql
-- Fix the bug in changeMenu() function 
+- Create the ViewSchedule.js 
 
 ### Less Priority
 - work on sessions and cookies
